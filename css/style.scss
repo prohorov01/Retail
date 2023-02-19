@@ -169,7 +169,7 @@ button {
 }
 
 .one {
-	background-image: url("../img/bg-1.png");
+	background-image: url("assets/img/bg-1.png");
 	width: 100%;
 	height: 525px;
 	background-repeat: no-repeat;
@@ -354,7 +354,7 @@ button {
 	height: 620px;
 }
 .two {
-	background-image: url("../img/bg-2.png");
+	background-image: url("assets/img/bg-2.png");
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
@@ -530,23 +530,7 @@ swiper-slide {
 // 	height: 100%;
 // 	object-fit: cover;
 // }
-.three-head {
-	height: 850px;
-	@media screen and (min-width: 992px) {
-		height: 650px;
-	}
-}
-.three {
-	background-image: url("../img/bg-3.png");
-	width: 100%;
-	height: 100%;
-	background-repeat: no-repeat;
-	background-position-x: left;
-	@media screen and (max-width: 992px) {
-		background-position-x: 50px;
-		background-position-y: 200px;
-	}
-}
+
 .tile {
 	display: flex;
 	gap: 29px;
@@ -603,6 +587,11 @@ swiper-slide {
 		color: rgba(17, 16, 16, 0.5);
 	}
 }
+.btn-center {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 120px;
+}
 .btn-black {
 	font-family: "Proxima Nova";
 	font-style: normal;
@@ -615,10 +604,23 @@ swiper-slide {
 	padding: 14px 40px;
 	margin-top: 24px;
 }
-.btn-center {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 120px;
+
+.three-head {
+	height: 850px;
+	@media screen and (min-width: 992px) {
+		height: 650px;
+	}
+}
+.three {
+	background-image: url("assets/img/bg-3.png");
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position-x: left;
+	@media screen and (max-width: 992px) {
+		background-position-x: 30px;
+		background-position-y: 200px;
+	}
 }
 .bg-showrooms {
 	display: flex;
@@ -663,7 +665,6 @@ swiper-slide {
 			margin-bottom: 0px;
 		}
 	}
-
 	&-more {
 		font-family: "Proxima Nova";
 		font-style: normal;

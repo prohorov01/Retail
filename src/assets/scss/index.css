@@ -1,0 +1,183 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 1420px;
+  margin: 0 auto;
+}
+
+.red {
+  background-color: red;
+  grid-area: header;
+}
+
+.green {
+  background-color: green;
+  grid-area: main;
+}
+
+.blue {
+  background-color: blue;
+  grid-area: sidebar;
+}
+
+.blank {
+  grid-row: 4/5;
+  grid-column: 1/5;
+}
+
+.yellow {
+  background-color: yellow;
+  grid-area: footer;
+}
+
+.aqua {
+  background-color: aqua;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+.dropdown label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.dropdown label::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  transform: rotateZ(45deg);
+  transition: all 0.3s;
+}
+.dropdown #dropdown {
+  display: none;
+}
+.dropdown #dropdown:checked ~ .dropdown-list {
+  display: grid;
+  grid-template-columns: repeat(3, 20px);
+  gap: 4px;
+  align-items: center;
+}
+.dropdown #dropdown:checked ~ label::after {
+  transform: rotateZ(-135deg);
+}
+.dropdown-list {
+  display: none;
+  position: absolute;
+  top: 20px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+@media screen and (min-width: 992px) {
+  .d-flex {
+    width: 100%;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 992px) {
+  .header {
+    flex-wrap: wrap;
+    row-gap: 40px;
+    padding-top: 44px;
+    padding-bottom: 32px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header-logo {
+    width: 167px;
+    height: 57px;
+    flex-basis: 100%;
+    order: -1;
+  }
+}
+.header-right-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.header-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header nav {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .header nav {
+    display: flex;
+    max-width: 890px;
+    width: 100%;
+    justify-content: space-between;
+    gap: 16px;
+  }
+}
+.header-link {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #0a0a0a;
+}
+.header-link.active {
+  color: #979797;
+}
+
+.e--dsk {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .e--dsk {
+    display: flex;
+  }
+}
+
+.e--mob {
+  display: flex;
+}
+@media screen and (min-width: 992px) {
+  .e--mob {
+    display: none;
+  }
+}/*# sourceMappingURL=index.css.map */
